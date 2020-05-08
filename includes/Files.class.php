@@ -46,8 +46,7 @@ class Files {
 			$err = 'Database connection failed while fetching files - ' . $e->getMessage();
 		}
 	}
-	
-	
+		
 	public function remove($id) {
 		$this->sql = 'DELETE FROM files WHERE id = :id';
 		
@@ -59,26 +58,4 @@ class Files {
 			$err = 'Database connection failed while removing a file - ' . $e->getMessage();
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
