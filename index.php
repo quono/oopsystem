@@ -2,7 +2,6 @@
 
 session_start();
 
-require 'includes/Constants.class.php';
 require 'includes/InputValidator.class.php';
 require 'includes/Client.class.php';
 require 'includes/User.class.php';
