@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$inputValidator = new InputValidator($content);
 		if ($inputValidator->length(0, 10000)) {
 			require 'includes/db.php';
-			$files = new Files($pdo, $_SESSION['id']);
+			$files = new Files($pdo, $_SESSION['userid']);
 			$files->add($name, $content);
 			
 			if (!isset($err)) {
